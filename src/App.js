@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "@mui/material";
+import CampaignList from "./components/CampaignList";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Navbar />
         <Container>
           <Routes>
-            <Route path="/" element={<>Hello</>} />
+            <Route path="/" element={<CampaignList />} />
           </Routes>
         </Container>
       </BrowserRouter>
